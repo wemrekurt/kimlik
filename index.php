@@ -76,7 +76,7 @@ if(!empty($_SESSION['okulusil']) or !empty($_SESSION['kimliksil'])){
             <div class="col-xs-1">İşlem</div>
         </div>
             <?php
-            $OkulListele=$db->query("SELECT * FROM okul ORDER BY id DESC",PDO::FETCH_ASSOC);
+            $OkulListele=$db->query("SELECT * FROM okul ORDER BY id DESC", PDO::FETCH_ASSOC)->fetchAll();
 
             function kagitharca($okulid){
                 global $db;
