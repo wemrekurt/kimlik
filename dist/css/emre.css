@@ -1,0 +1,43 @@
+.emre{
+    font-family: "Courier New", Courier, monospace;
+    border: 1px solid gray;
+}
+.emre thead{
+    background: #c0c0c0;
+
+
+}
+
+.emre thead tr th{
+    font-weight:bold;
+    padding:5px;
+    font-size:15px;
+    }
+
+.emre tbody tr td{
+
+    font-size:13px;
+    padding:5px;
+}
+
+.koseler{
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.kurt {
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-topright: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    color:white;
+    font-weight:bold;
+    background: #5cb355;
+}

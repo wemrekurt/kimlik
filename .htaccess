@@ -1,0 +1,13 @@
+RewriteEngine On
+
+
+RewriteRule ^kimlik/([0-9a-zA-Z-_]+)/([0-9]+)$  kimlikm.php?sinif=$1&okulid=$2 [L,QSA]
+RewriteRule ^ogrenci/([0-9a-zA-Z-_]+)/([0-9]+)$  ogrenci.php?islem=$1&id=$2 [L,QSA]
+RewriteRule ^okul/([0-9a-zA-Z-_]+)/([0-9]+)$  okul.php?islem=$1&id=$2 [L,QSA]
+RewriteRule ^okul/([0-9a-zA-Z-_]+)$  okul.php?islem=$1 [L,QSA]
+RewriteRule ^editor/([0-9a-zA-Z-_]+)/([0-9]+)$  editor.php?islem=$1&id=$2 [L,QSA]
+RewriteRule ^editor/([0-9a-zA-Z-_]+)/([0-9]+)/([0-9]+)$  editor.php?islem=$1&id=$2&kimlikid=$3 [L,QSA]
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
